@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:id="@+id/drawer_layout_home"
+    android:background="@drawable/back4">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:theme="@style/navigationTheme"
+        app:headerLayout="@layout/header_menu"
+        app:itemIconSize="30sp"
+        app:menu="@menu/main_menu" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +28,46 @@
             android:layout_height="45dp"
             android:layout_margin="15dp"
             android:src="@drawable/ic_menu"
-            app:tint="@color/colorApp" />
+            app:tint="@color/color1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to our Application "
+            android:layout_marginTop="30sp"
+            android:textSize="30sp"
+            android:layout_marginLeft="10sp"
+            android:textColor="#560755"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AuthentifyPro!"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#560755"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="10sp"
+            android:textColor="#0C2B85"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="AuthentifyPro harnesses machine learning/Ai and data science to safeguard the authenticity of products and enhancing brand equity."/>
+        <ImageView
+            android:layout_marginTop="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/br"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="100sp"
+
+            />
     </LinearLayout>
+
 </androidx.drawerlayout.widget.DrawerLayout>

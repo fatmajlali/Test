@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.Test" parent="Base.Theme.Test" />
+    <style name="navigationTheme" >
+        <item name="colorPrimary" >
+            @color/colorApp
+        </item>
+        <item name="colorControlHighlight">@color/colorApp</item>
+    </style>
 </resources>
