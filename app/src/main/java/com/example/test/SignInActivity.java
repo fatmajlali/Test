@@ -61,6 +61,15 @@ public class SignInActivity extends AppCompatActivity {
                 editor.apply();
             }
         });
+
+        // Check if there's a currently logged-in user
+        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
+        if (currentUser != null && currentUser.isEmailVerified()) {
+            // If user is already logged in and email is verified, open HomeActivity
+            startActivity(new Intent(SignInActivity.this, HomeActivity.class));
+            finish(); // Finish this activity to prevent going back to SignInActivity
+        }
+
         btnSignIn.setOnClickListener(v->{
             progressDialog.setMessage("Please Wait...!");
             progressDialog.show();

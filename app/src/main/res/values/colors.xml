@@ -5,4 +5,8 @@
     <color name="colorApp">#6672FF</color>
     <color name="color">#004AAD</color>
     <color name="color1">#0C2B85</color>
+    <color name="white_blue">#6672FF</color>
+    <color name="darck_blue">#32357a</color>
+    <color name="light_blue">#f2f1f6</color>
+    <color name="voillet">#6750A4</color>
 </resources>
