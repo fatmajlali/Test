@@ -105,7 +105,7 @@ public class SignUpActivity extends AppCompatActivity {
         phoneString = phone.getText().toString().trim();
         passwordString = password.getText().toString().trim();
 
-        if (fullnameString.length() < 7) {
+        if (fullnameString.length() < 3) {
             fullName.setError("fullName is invalid");
         }else if(!isValidEmail(emailString)){
             email.setError("email is Invalid!");
@@ -114,7 +114,7 @@ public class SignUpActivity extends AppCompatActivity {
             cin.setError("CIN is Invalid!");
         }else if (phoneString.length() !=8){
             phone.setError("Phone is Invalid");
-        }else if(passwordString.length() <5){
+        }else if(passwordString.length() <4){
             password.setError("Password is Invalid!");
         }else {
             result = true;

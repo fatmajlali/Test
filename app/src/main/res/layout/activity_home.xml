@@ -324,49 +324,8 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:id="@+id/InterfaceHome"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
 
-                    <ImageView
-                        android:id="@+id/imageViewHome"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/bottom_btn1" />
 
-                    <TextView
-                        android:id="@+id/textViewHome"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="Dashboard"
-                        android:textAlignment="center" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/InterfaceInvoice"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageViewInvoice"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/bottom_btn2" />
-
-                    <TextView
-                        android:id="@+id/textViewInvoice"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="Invoice"
-                        android:textAlignment="center" />
-                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/InterfaceSettings"
@@ -376,7 +335,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageViewSettings"
+                        android:id="@+id/btnProfile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/bottom_btn4" />

@@ -45,7 +45,7 @@ public class AlertActivity extends AppCompatActivity {
 
         if (!TextUtils.isEmpty(dataFieldText)){
 
-            Data data = new Data(dataFieldText,id);
+            Feedback data = new Feedback(dataFieldText,id);
 
             databaseReference.child(id).setValue(data);
 

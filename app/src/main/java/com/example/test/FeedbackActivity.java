@@ -7,7 +7,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.firebase.Firebase;
@@ -31,7 +30,7 @@ private Firebase Ref;
         dataField=findViewById(R.id.dataField);
         btnSend=findViewById(R.id.btnSend);
 
-        databaseReference = db.getReference("Data");
+        databaseReference = db.getReference("Feedback");
 
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,9 +47,9 @@ private Firebase Ref;
 
         if (!TextUtils.isEmpty(dataFieldText)){
 
-            Data data = new Data(dataFieldText,id);
+            Feedback feedback = new Feedback(dataFieldText,id);
 
-            databaseReference.child(id).setValue(data);
+            databaseReference.child(id).setValue(feedback);
 
             Toast.makeText(this,"Feedback has been saved",Toast.LENGTH_SHORT).show();
 

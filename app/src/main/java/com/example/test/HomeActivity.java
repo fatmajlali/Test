@@ -47,6 +47,7 @@ public class HomeActivity extends AppCompatActivity  {
 private ImageView btnSignOut;
 private ImageView btnFeedback;
 private ImageView btnAlert;
+private ImageView btnProfile;
     FirebaseAuth mAuth;
 
     private RecyclerView.Adapter adapterAdvise;
@@ -61,7 +62,16 @@ private ImageView btnAlert;
         mAuth = FirebaseAuth.getInstance();
         btnFeedback = findViewById(R.id.btnFeedback);
         btnAlert = findViewById(R.id.btnAlert);
+        btnProfile = findViewById(R.id.btnProfile);
         btnSignOut = findViewById(R.id.btnSignOut);
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v2) {
+
+                Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
 btnAlert.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v1) {
