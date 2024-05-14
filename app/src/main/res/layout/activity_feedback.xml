@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#EFF0F5"
+    tools:context=".FeedbackActivity">
+
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your Feedback here please!"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/colorApp"/>
+
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/feedback"
+        android:drawableTint="@color/colorApp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/dataField"
+        android:hint="Enter your Feedback"
+
+
+        />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send your Feedback"
+        android:id="@+id/btnSend"
+        android:layout_marginTop="40dp"
+        app:cornerRadius="30sp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorApp"
+
+        />
+
+
+
+</LinearLayout>

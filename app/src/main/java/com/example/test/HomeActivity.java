@@ -45,7 +45,9 @@ import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity  {
 private ImageView btnSignOut;
-FirebaseAuth mAuth;
+private ImageView btnFeedback;
+private ImageView btnAlert;
+    FirebaseAuth mAuth;
 
     private RecyclerView.Adapter adapterAdvise;
     private RecyclerView recyclerViewAdvise;
@@ -57,8 +59,24 @@ FirebaseAuth mAuth;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         mAuth = FirebaseAuth.getInstance();
-
+        btnFeedback = findViewById(R.id.btnFeedback);
+        btnAlert = findViewById(R.id.btnAlert);
         btnSignOut = findViewById(R.id.btnSignOut);
+btnAlert.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v1) {
+
+        Intent intent = new Intent(HomeActivity.this, AlertActivity.class);
+        startActivity(intent);
+    }
+});
+        btnFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, FeedbackActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,8 +85,8 @@ FirebaseAuth mAuth;
                 signOutUser();
             }
         });
-
     }
+
 
     private void signOutUser() {
         Intent StartActivity = new Intent(HomeActivity.this,SignInActivity.class);
@@ -76,6 +94,7 @@ FirebaseAuth mAuth;
         startActivity(StartActivity);
         finish();
     }
+
 
 
     @Override
