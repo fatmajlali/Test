@@ -157,12 +157,12 @@ btnAlert.setOnClickListener(new View.OnClickListener() {
                         }
                         if (phoneNumberExists) {
                             // Phone number exists in at least one document within the "users" node
-                            Toast.makeText(HomeActivity.this, "Phone number "+contents+" exists", Toast.LENGTH_LONG).show();
-                            Log.d(TAG, "Phone number exists in at least one document within the 'users' node.");
+                            Toast.makeText(HomeActivity.this, "Product "+contents+" exists", Toast.LENGTH_LONG).show();
+                            Log.d(TAG, "Product exists in at least one document within the 'users' node.");
                         } else {
                             // Phone number does not exist in any document within the "users" node
-                            Toast.makeText(HomeActivity.this, "Phone number does not exist in any document within the 'users' node.", Toast.LENGTH_LONG).show();
-                            Log.d(TAG, "Phone number does not exist in any document within the 'users' node.");
+                            Toast.makeText(HomeActivity.this, "Product does not exist in any document within the 'users' node.", Toast.LENGTH_LONG).show();
+                            Log.d(TAG, "Product does not exist in any document within the 'users' node.");
                         }
                     }
                     @Override
